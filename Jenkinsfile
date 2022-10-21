@@ -1,7 +1,7 @@
 pipeline {
     agent {label "java-11"}
     parameters {
-        choice(name: 'git-branch', choices: ["master", "develop"], description: 'for branches')
+        choice(name: 'git-branch', choices: ["developr", "master"], description: 'for branches')
         string(name: 'mvn-pk', defaultValue: "mvn package", description: 'build the package')
     }
     stages {
